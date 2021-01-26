@@ -1,0 +1,4 @@
+Sitemap: https://JuliaCon.github.io/proceedings-guide/sitemap.xml
+
+User-agent: *
+Disallow:
