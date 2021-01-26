@@ -1,4 +1,4 @@
-@def title = "Reviewer's"
+@def title = "Reviewer's guide"
 @def hascode = true
 
 # Review Guidelines and Process

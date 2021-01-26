@@ -1,6 +1,6 @@
-@def title = "Home"
+@def title = "JuliaCon proceedings guide"
 
-# Proceedings guides
+# Proceedings guide
 
 Welcome!
 
