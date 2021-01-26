@@ -1,3 +1,5 @@
 # JuliaCon Proceedings Guide
 
-A guide for creating and reviewing submissions to the JuliaCon proceedings. Check it out here: https://juliacon.github.io/proceedings-guide/
+A guide for creating and reviewing submissions to the JuliaCon proceedings.
+
+Check it out here: https://juliacon.github.io/proceedings-guide/
