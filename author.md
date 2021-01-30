@@ -37,7 +37,7 @@ On the technical side, the submission (to be submitted through [this form](https
 
 \note{It is possible to have the paper in a separate repository but we recommend using a `paper/` subfolder instead.}
 
-To simplify and unify the submission process, we provide a [template repository](https://github.com/JuliaCon/JuliaConSubmission.jl) on GitHub. **Using the `paper/` subfolder of this [template](https://github.com/JuliaCon/JuliaConSubmission.jl) as a base is mandatory!** In particular, it contains the following files:
+To simplify and unify the submission process, we provide a [template repository](https://github.com/JuliaCon/JuliaConSubmission.jl) on GitHub. **Using the structure of the `paper/` subfolder of this [template](https://github.com/JuliaCon/JuliaConSubmission.jl) as a base is mandatory!** In particular, it contains the following files:
 
 ```
 .
