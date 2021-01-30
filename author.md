@@ -35,6 +35,8 @@ Use cases back up the work by showing how it can be used.
 <!-- but should respect the specifications outlined above.  -->
 On the technical side, the submission (to be submitted through [this form](https://proceedings.juliacon.org/papers/new)) must be based on a git repository on GitHub. Typically, this would be the repository of your julia package or code. The paper itself should be written in LaTeX (not Markdown) and should reside in a `paper/` subfolder (potentially in a separate `paper` branch) of this repository.
 
+\note{It is possible to have the paper in a separate repository but we recommend using a `paper/` subfolder instead.}
+
 To simplify and unify the submission process, we provide a [template repository](https://github.com/JuliaCon/JuliaConSubmission.jl) on GitHub. **Using the `paper/` subfolder of this [template](https://github.com/JuliaCon/JuliaConSubmission.jl) as a base is mandatory!** In particular, it contains the following files:
 
 ```
