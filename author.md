@@ -67,7 +67,9 @@ All fields from `paper.yml` must be filled, including:
 5. `bibliography`: the name of the BibTeX file, including the `.bib` extension.
 
 
-\warn{While the JOSS accepts papers in Markdown format it is important that your JuliaCon proceedings submission, i.e. the `paper/` subfolder, **does not** contain a `paper.md`. Otherwise Whedon will be confused by the existence of both `paper.tex` and `paper.md`. Note that because of the absence of a `paper.md` file the [Whedon preview service](https://whedon.theoj.org) shouldn't be used/won't work.}
+\warn{While the JOSS accepts papers in Markdown format it is important that your JuliaCon proceedings submission, i.e. the `paper/` subfolder, **does not** contain a `paper.md`. Otherwise Whedon will be confused by the existence of both `paper.tex` and `paper.md`.}
+
+\note{The [Whedon preview service](https://whedon.theoj.org) can be used to see potential errors.}
 
 
 ### Local build
