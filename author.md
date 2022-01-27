@@ -20,9 +20,9 @@ It should be at most two pages of content including references. The format is si
 
 ### Full paper submissions
 
-> A paper of about 5-10 pages
+> A paper of about 5-10 pages +
 > + an abstract (at most 600 characters, written in plain English with no symbol nor formula)
-> + references etc.
+> + references
 
 Compared to an extended abstract, a full paper presents more
 of the background and context motivating
