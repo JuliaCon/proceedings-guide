@@ -12,15 +12,17 @@ The JuliaCon is accepting two different kinds of submissions:
 
 ### Extended abstract submissions
 
-> A one page paper + references etc.
+> Two pages (including references)
 
 An extended abstract lays out in a concise fashion the methodology
 and use cases of the work presented at the conference.
-It should be at most one page of content excluding references. The format is similar to a [standard JOSS paper](https://joss.readthedocs.io/en/latest/submitting.html).
+It should be at most two pages of content including references. The format is similar to a [standard JOSS paper](https://joss.readthedocs.io/en/latest/submitting.html).
 
 ### Full paper submissions
 
-> A paper of about 5-10 pages + an abstract with at most 600 characters, written in plain English with no symbol nor formula + references etc.
+> A paper of about 5-10 pages
+> + an abstract (at most 600 characters, written in plain English with no symbol nor formula)
+> + references etc.
 
 Compared to an extended abstract, a full paper presents more
 of the background and context motivating
