@@ -44,10 +44,18 @@ of the documents, they should in all comments be as specific as possible.
 ## Review process
 
 The review process is similar to the [Journal of Open-Source Software](http://joss.theoj.org)
-and takes place in a dedicated GitHub issue.
+and takes place in a dedicated GitHub issue (in [this repository](https://github.com/JuliaCon/proceedings-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc)).
+
+### Checklist
 A reviewer checklist is generated for each reviewer of the paper.
 A box should be checked only once the reviewer considers that the criterion is met by the work presented.
 
-**Note**: the checklist is meant as a general guide for reviewers and does not capture
+**Note**: the checklist is only meant as a general guide for reviewers and does not capture
 subject-specific best practices or notation consistency. The reviewer should feel free
 to indicate what they consider should be edited in the submitted work.
+
+### Different types of submission
+
+Although typically the case, not all JuliaCon proceedings submissions are about presenting new (versions of) Julia packages. Instead, they might showcase an application use case, present a new feature added to an established package, or compare (an aspect of) a Julia package to the tools available in another programming language. In these cases, the review should be reasonably adapted to the character of the submission. For example, it might make sense to focus more on the paper (e.g. check wether the presentation or examples can be improved etc.) than strictly checking the code repository from a software development perspective. Questions like "Is there enough documentation?" or "Is there a LICENSE file?" might not make too much sense for some of these submission and you are free to take some liberty in deciding what are relevant points to check and improve as part of the review process.
+
+(Note that this in contrast to JOSS, which focuses on software packages, applications, and libraries only and therefore doesn't allow these types of submissions in the first place.)
