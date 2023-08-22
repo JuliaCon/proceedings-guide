@@ -117,6 +117,6 @@ The reviewers will do there work and read and constructively criticize your pape
 
 ### Publication phase
 
-The final phase is about making you're paper formally ready for publication. Apart from a potentiallly necessary stylistic reformatting, as requested by the editor, **you** should archive the final version of your work (paper + code) and use a service like [zenodo](https://zenodo.org/) to obtain a permanent DOI for it (which you should then post into the review GitHub-issue).
+The final phase is about making you're paper formally ready for publication. Apart from a potentially necessary stylistic reformatting, as requested by the editor, **you** should archive the final version of your work (paper + code) and use a service like [zenodo](https://zenodo.org/) to obtain a permanent DOI for it (which you should then post into the review GitHub-issue).
 
 Finally, it's our turn to push your paper over the line and actually publish it in the JuliaCon proceeding.
