@@ -69,9 +69,8 @@ All fields from `paper.yml` must be filled, including:
 5. `bibliography`: the name of the BibTeX file, including the `.bib` extension.
 
 
-\warn{While the JOSS accepts papers in Markdown format it is important that your JuliaCon proceedings submission, i.e. the `paper/` subfolder, **does not** contain a `paper.md`. Otherwise Whedon will be confused by the existence of both `paper.tex` and `paper.md`.}
+\warn{While the JOSS accepts papers in Markdown format it is important that your JuliaCon proceedings submission, i.e. the `paper/` subfolder, **does not** contain a `paper.md`. Otherwise Editorialbot will be confused by the existence of both `paper.tex` and `paper.md`.}
 
-\note{The [Whedon preview service](https://whedon.theoj.org) can be used to see potential errors.}
 
 
 ### Local build
@@ -105,7 +104,7 @@ Until your article is published, it will go through **three phases**, as describ
 
 Once you've submitted your paper, we will create an issue for it on GitHub and start the pre-review phase. In particular, the following things will happen: 
 * **We** will make sure that your paper could be published in the JuliaCon proceedings at all (e.g. must be related to a JuliaCon contribution, must adhere to our community standards etc.)
-* **You** should make sure that your paper compiles with the Whedon bot.
+* **You** should make sure that your paper compiles with the Editorialbot bot.
 * **You** should suggest a few potential reviewers.
 * **We** will try to find and invite (typically two) reviewers.
 
