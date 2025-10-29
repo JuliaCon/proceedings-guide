@@ -93,7 +93,7 @@ latexmk -c
 
 ### Overleaf
 
-Note that the [template repository](https://github.com/JuliaCon/JuliaConSubmission.jl) is also available on [OverLeaf](https://www.overleaf.com/read/dqjbrhqxjpwq) in read-only mode. The platform supports the build process and can be used for authors
+Note that the [template repository](https://github.com/JuliaCon/JuliaConSubmission.jl) is also available on [OverLeaf](https://www.overleaf.com/latex/templates/juliacon-proceedings-template/hgtmcqdmgbsx). The platform supports the build process and can be used for authors
 which cannot create the PDF locally.
 
 ## Procedure after submission
