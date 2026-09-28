@@ -9,5 +9,7 @@ references, more detailed explanations and structure required to
 understand the subject of the presentation in more depth.
 All submissions are reviewed with a very similar process as the [Journal of Open-Source Software](http://joss.theoj.org), that is we follow the same [guiding principles](https://joss.readthedocs.io/en/latest/reviewer_guidelines.html) and use the [`@editorialbot` GitHub bot](https://github.com/editorialbot). However, we accept different kinds of contributions and use a different paper template.
 
-For more information, checkout the [Author's guide](author), if you want to submit a paper, and the [Reviewer's guide](reviewer) if you are supporting us as a voluntary reviewer.
+For more information, check out the [Author's guide](author) if you want to submit a paper, and the [Reviewer's guide](reviewer) if you are supporting us as a volunteer reviewer.
+
+Submissions are accepted during announced submission periods only. Each opening is announced on the [Julia Discourse](https://discourse.julialang.org), [Zulip](https://julialang.zulipchat.com) and [Slack](https://julialang.org/slack/).
 
