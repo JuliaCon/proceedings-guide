@@ -178,13 +178,28 @@ SIDE BAR
   padding-left: 1rem;
   flex-grow: 1;
   display: flex;
-  height: 100%;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   color: #27262b;
-  font-size: 18px !important;
-  line-height: 1.15em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.side-bar .header .title-main {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.side-bar .header .title-sub {
+  margin-top: 0.15rem;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #5c5962;
 }
 
 .show-menu {
@@ -202,7 +217,6 @@ SIDE BAR
   padding-right: 2rem;
   border: 0;
   width: calc(100% - 220px);
-  background-color: white;
 }
 
 .side-bar .menu {
@@ -301,17 +315,13 @@ input[type=checkbox]:checked ~ #side-menu { display: block; }
 
   .side-bar .header {
     padding-left: 15px;
-    width: 150px;
-  } /* middle space */
-  .show-menu { display: block; }
+    flex: 1 1 auto;
+  }
+  .show-menu { display: block; width: auto; }
 }
 
 /* side bar adjustments for narrow mode (bar on top) */
 @media (min-width: 31.25rem) {
-  .side-bar .header .title {
-    font-size: 24px !important;
-  }
-
   .menu-list-item {
     font-size: 16px !important;
   }
@@ -328,18 +338,25 @@ input[type=checkbox]:checked ~ #side-menu { display: block; }
     align-items: flex-end;
   }
 
+  .side-bar .menu,
+  .side-bar .footer {
+    box-sizing: border-box;
+    width: 248px;
+  }
+
+  /* full-width border, content aligned with the 248px menu column */
   .side-bar .header {
     z-index: 101;
-    height: 60px;
-    max-height: 60px;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 60px;
     border-bottom: 1px solid #eeebee;
     padding-right: 2rem;
-    padding-left: 2rem;
+    padding-left: calc(100% - 248px + 2rem);
   }
 
   .side-bar .header .title {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: 0.5rem 0;
   }
 
   .show-menu {
@@ -347,7 +364,6 @@ input[type=checkbox]:checked ~ #side-menu { display: block; }
   }
 
   .side-bar .menu {
-    width: 135px;
     padding-right: 2rem;
     padding-left: 2rem;
     padding-top: 3rem;
