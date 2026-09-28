@@ -17,8 +17,8 @@ as a financial or intellectual conflict of interest" (PNAS guidelines above).
 
 ## Code of Conduct
 
-The reviewer commits to reading and respecting the conference
-[Code of Conduct](https://juliacon.org/2019/coc) in the assessment and all
+The reviewer commits to reading and respecting the
+[Julia Community Standards](https://julialang.org/community/standards/) in the assessment and all
 communications during the review process.
 
 If some content submitted to the Conference does not comply with the Code of Conduct,
@@ -37,9 +37,9 @@ Each review should include a general recommendation from the following list:
 - Minor modification request: some changes are required but are minor enough to be done in one round, they do not affect the core content of the paper.
 - Major modification request: some changes are requested on some central aspects of the paper and will need to be checked in an additional round of review.
 
-In any case other than an acceptation as-is, the reviewer should provide the author with a list of
+In any case other than acceptance as-is, the reviewer should provide the author with a list of
 comments they can use to improve their document for the next round, citing the corresponding parts
-of the documents, they should in all comments be as specific as possible.
+of the documents, and be as specific as possible in all comments.
 
 ## Review process
 
@@ -47,7 +47,7 @@ The review process is similar to the [Journal of Open-Source Software](http://jo
 and takes place in a dedicated GitHub issue (in [this repository](https://github.com/JuliaCon/proceedings-review/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc)).
 
 ### Checklist
-A reviewer checklist is generated for each reviewer of the paper.
+Each reviewer generates their own checklist by commenting `@editorialbot generate my checklist` in the review issue.
 A box should be checked only once the reviewer considers that the criterion is met by the work presented.
 
 **Note**: the checklist is only meant as a general guide for reviewers and does not capture
@@ -56,6 +56,6 @@ to indicate what they consider should be edited in the submitted work.
 
 ### Different types of submission
 
-Although typically the case, not all JuliaCon proceedings submissions are about presenting new (versions of) Julia packages. Instead, they might showcase an application use case, present a new feature added to an established package, or compare (an aspect of) a Julia package to the tools available in another programming language. In these cases, the review should be reasonably adapted to the character of the submission. For example, it might make sense to focus more on the paper (e.g. check wether the presentation or examples can be improved etc.) than strictly checking the code repository from a software development perspective. Questions like "Is there enough documentation?" or "Is there a LICENSE file?" might not make too much sense for some of these submission and you are free to take some liberty in deciding what are relevant points to check and improve as part of the review process.
+Although typically the case, not all JuliaCon proceedings submissions are about presenting new (versions of) Julia packages. Instead, they might showcase an application use case, present a new feature added to an established package, or compare (an aspect of) a Julia package to the tools available in another programming language. In these cases, the review should be reasonably adapted to the character of the submission. For example, it might make sense to focus more on the paper (e.g. check whether the presentation or examples can be improved etc.) than strictly checking the code repository from a software development perspective. Questions like "Is there enough documentation?" or "Is there a LICENSE file?" might not make too much sense for some of these submission and you are free to take some liberty in deciding what are relevant points to check and improve as part of the review process.
 
-(Note that this in contrast to JOSS, which focuses on software packages, applications, and libraries only and therefore doesn't allow these types of submissions in the first place.)
+(Note that this is in contrast to JOSS, which focuses on software packages, applications, and libraries only and therefore doesn't allow these types of submissions in the first place.)

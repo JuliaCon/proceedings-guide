@@ -5,7 +5,7 @@
 
 ## Paper specification
 
-The JuliaCon is accepting two different kinds of submissions:
+The JuliaCon proceedings accept two different kinds of submissions:
 
  * a short form "extended abstract" (similar to a standard JOSS paper),
  * a more in-depth long form paper.
@@ -35,7 +35,15 @@ Use cases back up the work by showing how it can be used.
 
 <!-- The paper structure remains mostly up to the authors -->
 <!-- but should respect the specifications outlined above.  -->
-On the technical side, the submission (to be submitted through [this form](https://proceedings.juliacon.org/papers/new)) must be based on a git repository on GitHub. Typically, this would be the repository of your julia package or code. The paper itself should be written in LaTeX (not Markdown) and should reside in a `paper/` subfolder (potentially in a separate `paper` branch) of this repository.
+### When and where to submit
+
+Submissions are accepted during announced submission periods only. Each opening is announced on the [Julia Discourse](https://discourse.julialang.org), [Zulip](https://julialang.zulipchat.com) and [Slack](https://julialang.org/slack/). While submissions are open, log in at [proceedings.juliacon.org](https://proceedings.juliacon.org) with your ORCID and use the **Submit** link. Outside submission periods the Submit link is hidden and the form is closed.
+
+\note{Before submitting, add an email address and your GitHub username to your profile on [proceedings.juliacon.org](https://proceedings.juliacon.org). The form cannot be submitted without them, and we use them to contact you about your paper.}
+
+### Repository and paper format
+
+On the technical side, the submission must be based on a **public** git repository on GitHub. The form checks that the repository can be cloned from the address you enter, without authentication. Typically, this would be the repository of your Julia package or code. The paper itself should be written in LaTeX (not Markdown) and should reside in a `paper/` subfolder (potentially in a separate `paper` branch) of this repository.
 
 \note{It is possible to have the paper in a separate repository but we recommend using a `paper/` subfolder instead.}
 
@@ -43,9 +51,11 @@ To simplify and unify the submission process, we provide a [template repository]
 
 ```
 .
-├── paper.tex 
+├── paper.tex
 ├── ref.bib
 ├── paper.yml
+├── juliagraphs.png
+├── .latexmkrc
 ├── header.tex
 ├── jlcode.sty
 ├── journal_dat.tex
@@ -53,11 +63,10 @@ To simplify and unify the submission process, we provide a [template repository]
 ├── juliacon.cls
 ├── logojuliacon.pdf
 ├── prep.rb
-├── bib.tex
-└── bib.rb
+└── bib.tex
 ```
 
-**Only the first 3 files should be edited**. Modifications to others might be
+**Only the first 3 files should be edited**, and `juliagraphs.png` is an example figure you can replace with your own. Modifications to the other files might be
 over-written and replaced by the template version later in the process.
 
 All fields from `paper.yml` must be filled, including:
@@ -75,6 +84,8 @@ All fields from `paper.yml` must be filled, including:
 
 ### Local build
 
+Building the paper locally requires **Ruby** and **latexmk**: the template's `.latexmkrc` runs `prep.rb` (a Ruby script) to generate the header from `paper.yml`.
+
 **Important:** The paper is built using the `latexmk` tool:
 
 ```
@@ -82,7 +93,7 @@ latexmk -bibtex -pdf paper.tex
 ```
 
 This will re-generate `header.tex, bib.tex, journal_dat.tex` and build the final PDF.
-The LaTex document can be split in multiple files without problem, just keep
+The LaTeX document can be split in multiple files without problem, just keep
 `paper.tex` your main file.  
 
 To clean up the directory, use:
@@ -93,8 +104,8 @@ latexmk -c
 
 ### Overleaf
 
-Note that the [template repository](https://github.com/JuliaCon/JuliaConSubmission.jl) is also available on [OverLeaf](https://www.overleaf.com/latex/templates/juliacon-proceedings-template/hgtmcqdmgbsx). The platform supports the build process and can be used for authors
-which cannot create the PDF locally.
+Note that the [template repository](https://github.com/JuliaCon/JuliaConSubmission.jl) is also available on [OverLeaf](https://www.overleaf.com/latex/templates/juliacon-proceedings-template/hgtmcqdmgbsx). The platform supports the build process and can be used by authors
+who cannot create the PDF locally.
 
 ## Procedure after submission
 
@@ -104,7 +115,7 @@ Until your article is published, it will go through **three phases**, as describ
 
 Once you've submitted your paper, we will create an issue for it on GitHub and start the pre-review phase. In particular, the following things will happen: 
 * **We** will make sure that your paper could be published in the JuliaCon proceedings at all (e.g. must be related to a JuliaCon contribution, must adhere to our community standards etc.)
-* **You** should make sure that your paper compiles with the Editorialbot bot.
+* **You** should make sure that your paper compiles with Editorialbot: comment `@editorialbot generate pdf` in the issue. `@editorialbot commands` lists everything else the bot can do, such as `@editorialbot check references`.
 * **You** should suggest a few potential reviewers.
 * **We** will try to find and invite (typically two) reviewers.
 
@@ -112,10 +123,14 @@ Afterwards, we're ready for the actual review phase, which will happen in a sepa
 
 ### Review phase
 
-The reviewers will do there work and read and constructively criticize your paper and the corresponding code repository. The idea is to bring your submission into the best shape possible. Once the reviews are in, **you** should address the raised points, e.g. by making corrections, clarifying things, or fixing bugs. The revised submission will then be reviewed (at least) once more by the reviewers until they endorse your work for publication.
+The reviewers will do their work and read and constructively criticize your paper and the corresponding code repository. The idea is to bring your submission into the best shape possible. Once the reviews are in, **you** should address the raised points, e.g. by making corrections, clarifying things, or fixing bugs. The revised submission will then be reviewed (at least) once more by the reviewers until they endorse your work for publication.
 
 ### Publication phase
 
-The final phase is about making you're paper formally ready for publication. Apart from a potentially necessary stylistic reformatting, as requested by the editor, **you** should archive the final version of your work (paper + code) and use a service like [zenodo](https://zenodo.org/) to obtain a permanent DOI for it (which you should then post into the review GitHub-issue).
+The final phase is about making your paper formally ready for publication. Apart from any stylistic reformatting requested by the editor, **you** should:
+* double check the authors and affiliations (including ORCIDs) in `paper.yml`;
+* make a release of your software with the changes from the review, and post its version number in the review issue;
+* archive that release (paper + code) with a service like [Zenodo](https://zenodo.org/) to obtain a permanent DOI, and post the DOI in the review issue;
+* make sure the title, author list and license of the archive match those of the paper and the software.
 
-Finally, it's our turn to push your paper over the line and actually publish it in the JuliaCon proceeding.
+Finally, it's our turn to push your paper over the line and actually publish it in the JuliaCon proceedings.
